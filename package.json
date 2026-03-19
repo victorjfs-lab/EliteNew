@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:hostinger": "vite build --mode production",
+    "build:hostinger": "vite build --mode production && node scripts/prepare-static-fallback.mjs",
     "build:dev": "vite build --mode development",
     "package:hostinger": "powershell -ExecutionPolicy Bypass -File scripts/package-hostinger.ps1",
     "lint": "eslint .",
